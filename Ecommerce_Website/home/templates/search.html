@@ -1,0 +1,6 @@
+{% extends "Base.html" %}   
+{% block content %}
+you searched for this {{search_value}}<br>
+{% load static %}
+<img style="display: block; margin-left: auto; margin-right: auto; width: 600px; height:600px;" src="{% static search_value %}" alt="My image">
+{% endblock %}
